@@ -19,6 +19,10 @@
   - Assign members, set priority, due dates
   - Track task activity logs
   - README [Task Management README](https://github.com/johnson-oragui/TaskFlow-Pro/blob/main/TASK-MANAGEMENT.md)
+- **Activity Logs**
+  - Track task creation, updates, and assignment changes
+  - Team-wide audit trail for transparency
+  - README [Activity Logs README]()
 - **File Uploads**
   - Attach files to tasks
   - Store locally or to S3-compatible storage
@@ -29,6 +33,7 @@
   - README.md [Real-time Chat README](https://github.com/johnson-oragui/TaskFlow-Pro/blob/main/REAL-TIME-CHATS.md)
 - **Dashboard Analytics**
   - Task stats and member activity summaries
+  - README [Dashboard Analytics README](https://github.com/johnson-oragui/TaskFlow-Pro/blob/main/DASHBOARD-AND-ANALYTICS.md)
 
 ---
 
