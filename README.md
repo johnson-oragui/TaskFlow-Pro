@@ -22,6 +22,7 @@
 - **File Uploads**
   - Attach files to tasks
   - Store locally or to S3-compatible storage
+  - README [File Uploads](https://github.com/johnson-oragui/TaskFlow-Pro/blob/main/FILE-UPLOADS.md)
 - **Real-time Chat**
   - WebSocket-based chat per team/task
   - Message persistence
