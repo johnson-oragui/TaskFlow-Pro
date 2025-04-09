@@ -9,6 +9,7 @@
 - **User Authentication**
   - JWT-based login & registration
   - Secure password hashing
+  - README (User Authentication)[https://github.com/johnson-oragui/TaskFlow-Pro/blob/main/USERAUTHENTICATION.md]
 - **Team & Role Management**
   - Create/join teams
   - Role-based permissions (`admin`, `manager`, `member`)
