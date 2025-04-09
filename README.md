@@ -18,6 +18,7 @@
   - Create/update/delete tasks
   - Assign members, set priority, due dates
   - Track task activity logs
+  - README [Task Management README](https://github.com/johnson-oragui/TaskFlow-Pro/blob/main/TASK-MANAGEMENT.md)
 - **File Uploads**
   - Attach files to tasks
   - Store locally or to S3-compatible storage
