@@ -13,6 +13,7 @@
 - **Team & Role Management**
   - Create/join teams
   - Role-based permissions (`admin`, `manager`, `member`)
+  - README [Team & Role Management README](https://github.com/johnson-oragui/TaskFlow-Pro/blob/main/TEAM-AND-ROLE-MANAGEMENT.md)
 - **Task Management**
   - Create/update/delete tasks
   - Assign members, set priority, due dates
