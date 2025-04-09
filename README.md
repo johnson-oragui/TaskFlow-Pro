@@ -42,12 +42,12 @@
 | Layer         | Tech                        |
 |---------------|-----------------------------|
 | Language      | Go                          |
-| Framework     | Gin / Fiber                 |
-| ORM           | GORM or SQLC                |
+| Framework     | Gin                         |
+| ORM           | GORM                        |
 | Database      | PostgreSQL                  |
 | Auth          | JWT (`golang-jwt/jwt`)      |
 | WebSocket     | Gorilla WebSocket           |
-| File Uploads  | Go file handling / S3 SDK   |
+| File Uploads  | cloudinary                  |
 | Env Config    | `joho/godotenv`             |
 | Testing       | `stretchr/testify`, `httptest` |
 
