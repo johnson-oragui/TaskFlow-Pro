@@ -22,7 +22,7 @@
 - **Activity Logs**
   - Track task creation, updates, and assignment changes
   - Team-wide audit trail for transparency
-  - README [Activity Logs README]()
+  - README [Activity Logs README](https://github.com/johnson-oragui/TaskFlow-Pro/blob/main/ACTIVITY-LOGS.md)
 - **File Uploads**
   - Attach files to tasks
   - Store locally or to S3-compatible storage
