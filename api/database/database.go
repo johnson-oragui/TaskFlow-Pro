@@ -1,9 +1,7 @@
 package database
 
 import (
-	"fmt"
 	"log"
-	"os"
 	"time"
 
 	"gorm.io/driver/postgres"
@@ -14,18 +12,8 @@ import (
 
 var DB *gorm.DB
 
-func ConnectDatabase() (*gorm.DB, error) {
-	HOST := os.Getenv("DB_HOST")
-	USER := os.Getenv("DB_USERNAME")
-	PASSWORD := os.Getenv("DB_PASSWORD")
-	NAME := os.Getenv("DB_NAME")
-	PORT := os.Getenv("DB_PORT")
-	SSLMODE := os.Getenv("DB_SSLMODE")
-	if HOST == "" || USER == "" || PASSWORD == "" || NAME == "" || PORT == "" || SSLMODE == "" {
-		log.Println("DATABASE HOST , USER, PASSWORD, NAME, PORT, SSLMODE missing in configuration.")
-		return nil, fmt.Errorf("DATABASE HOST , USER, PASSWORD, NAME, PORT, SSLMODE missing in configuration")
-	}
-	dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s sslmode=%s", HOST, USER, PASSWORD, NAME, PORT, SSLMODE)
+func ConnectDatabase(dsn string) (*gorm.DB, error) {
+
 	db, err := gorm.Open(postgres.New(postgres.Config{
 		DSN:                  dsn,
 		PreferSimpleProtocol: true,
@@ -58,7 +46,7 @@ func ConnectDatabase() (*gorm.DB, error) {
 	if err != nil {
 		return nil, err
 	}
-	log.Println("Connected to Database")
+	log.Println("[POSTGRES] Connected to Database ✅")
 
 	sqlDb, err := db.DB()
 	if err != nil {
@@ -69,7 +57,7 @@ func ConnectDatabase() (*gorm.DB, error) {
 	sqlDb.SetMaxIdleConns(10)
 	sqlDb.SetConnMaxLifetime(20 * time.Minute)
 	sqlDb.SetConnMaxIdleTime(5 * time.Minute)
-	log.Println("✅ DB connection pool configured successfully!")
+	log.Println("[POSTGRES] DB connection pool configured successfully! ✅ ")
 
 	DB = db
 
